@@ -1,4 +1,4 @@
-# Email Phishing Simulation and Detection - Microsoft Defender (Cloud)
+# Email Phishing - Simulation, Detection and Threat Hunting - Microsoft Defender (Cloud)
 
 ## Project Overview:
 This project aims to simulate a phishing attack via email to detect employees who click on the embedded URL, which in this case is assumed to be malicious.
