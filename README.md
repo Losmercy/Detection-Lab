@@ -20,35 +20,36 @@ This project aims to simulate a phishing attack via email to detect employees wh
 
 ## Steps
 - Setup SafeLink and Anti-Phishing Policies to prevent users from clicking hidden links within an email and scan emails before delivering to users or quarantining.
-<img width="1920" height="1080" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/e022537e-a308-4c2d-9ebb-3d6e869d6ca9" />
+<img width="1920" height="916" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/17b38fc9-7cd6-4ee7-9912-c18540ddb75c" />
 Ref 1: SafeLink Policy overview (Microsoft Defender>Policies & Rules>Threat Policies>Safe Links.
 
 
-<img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/93d968f3-2202-4ef9-8d49-5cee9d38bdb3" />
+<img width="1920" height="920" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/1a46e0c7-d030-4e80-b8d9-e91b9775debd" />
 Ref 2: Anit-Phishing Policy OverviewPolicy overview (Microsoft Defender>Policies & Rules>Threat Policies>Anti-Phishing.
 
 
 - Sent an email with an embedded link using ProtonMail domain from a newly created account -Email Delivered to the intended receiver.
 - Simulated an email phishing simulation using a pre-built simulator on Microsoft defender. The MITRE ATT&CK technique being exploited here is “credential access” to know which users will provide their credentials to the supposedly malicious URL page. The URL page requests the user to enter their login credentials which in a real world scenario, would be forwarded to the attackers.
-<img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/8001bd0c-53d1-45de-9abe-baa87621f760" />
+<img width="1920" height="916" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/bf835a9d-311b-4a4c-b98d-289c84aa8490" />
 Ref 3: Phishing email simulator sent to intended user with the aim of obtaining their login credentials
 
 
-<img width="1920" height="1080" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/b20fe27e-52d5-4baa-9430-3d3c0ffa4519" />
+<img width="1920" height="909" alt="Screenshot (49)" src="https://github.com/user-attachments/assets/e7c94885-cbad-490c-a027-09d26d92c976" />
 Ref 4: Phishing email received and opened by User
 
 
-<img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/a90a118b-ae54-4371-97dc-f3d21b703f52" />
+<img width="1920" height="910" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/93363a2e-82f2-49bf-9a8f-f71f05113b6b" />
 Ref 5: Phishing notification
 
 
-<img width="1920" height="1080" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/9ae8a8d4-81d9-4e0e-9a9e-7cf65845477b" />
+<img width="1920" height="909" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/67f3a2ed-c440-4b5a-8932-f71aece839c3" />
 Ref 6: New training recommended for user (Automated mail as set up in the Anit-Phishing Policy)
 
 
 - Conducted further investigation to determine the legitimacy of the embedded URL within the phishing emails. Microsoft Defender>Investigation and Response> Hunting> Advanced Hunting>Email and Collaborations. Queried EmailUrlInfo and UrlClickEvents to see the fields available which would help with threat hunting if this were a real world scenario.
   
-<img width="1920" height="1080" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/9cd75fbd-0b43-409a-b3f5-60ee963ee3f1" />
+<img width="1920" height="909" alt="Screenshot (66)" src="https://github.com/user-attachments/assets/f74db7c8-fd22-4451-9f60-e38ceb331995" />
+
 Ref 7: Advanced hunting for legitimacy of the embedded link.
 
 
